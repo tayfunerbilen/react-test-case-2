@@ -10,4 +10,4 @@ Tabi kullandıkça birkaç farklı trickte olduğunu fark ettim, o yüzden bunda
 
 ### Yapılış Videosu
 
-[]()
+[https://www.youtube.com/watch?v=MKTlIk7gooU](https://www.youtube.com/watch?v=MKTlIk7gooU)

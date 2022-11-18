@@ -25,10 +25,10 @@ function App() {
 		if (pastedData) {
 			const arr = pastedData.split("\n").map(text => {
 				if (/([\w]+)=(.+?)/.test(text)) {
-					let [key, value] = text.split('=')
+					let [key, ...value] = text.split('=')
 					let find = items.find(i => i.key === key)
 					if (!find || find?.key === items[index].key) {
-						return {key, value}
+						return {key, value: value.join('=')}
 					}
 				}
 			}).filter(Boolean)

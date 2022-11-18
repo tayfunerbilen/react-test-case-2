@@ -21,7 +21,6 @@ function App() {
 	}, [items])
 
 	const pasteHandle = (e, index) => {
-		e.preventDefault()
 		const pastedData = e.clipboardData.getData('text')
 		if (pastedData) {
 			const arr = pastedData.split("\n").map(text => {
@@ -34,6 +33,7 @@ function App() {
 				}
 			}).filter(Boolean)
 			if (arr.length > 0) {
+				e.preventDefault()
 				setItems(items => [...items.slice(0, index), ...arr, ...items.slice(index + 1)])
 			}
 		}
